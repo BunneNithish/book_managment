@@ -1,0 +1,12 @@
+<h2>📘 {{ book?.title }}</h2>
+
+<div class="details-box" *ngIf="book">
+  <p><strong>Author:</strong> {{ book.author }}</p>
+  <p><strong>Published:</strong> {{ book.publishedDate | date:'longDate' }}</p>
+  <p><strong>Description:</strong></p>
+  <p>{{ book.description }}</p>
+
+  <button routerLink="/">⬅ Back to List</button>
+  <button class="delete-btn" (click)="deleteBook()">Delete Book</button>
+
+</div>

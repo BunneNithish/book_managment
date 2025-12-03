@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "publishedDate": "2008-08-01",
+    "description": "A handbook of agile software craftsmanship."
+  },
+  {
+    "id": 2,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt, David Thomas",
+    "publishedDate": "1999-10-20",
+    "description": "Journey to mastery for software developers."
+  },
+  {
+    "id": 3,
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "publishedDate": "2008-05-15",
+    "description": "An opinionated look at JavaScript for professionals."
+  }
+]

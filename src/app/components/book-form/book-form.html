@@ -1,0 +1,19 @@
+<h2>➕ Add New Book</h2>
+
+<form (ngSubmit)="addBook()" class="form-box">
+
+  <label>Title</label>
+  <input type="text" [(ngModel)]="newBook.title" name="title" required>
+
+  <label>Author</label>
+  <input type="text" [(ngModel)]="newBook.author" name="author" required>
+
+  <label>Published Date</label>
+  <input type="date" [(ngModel)]="newBook.publishedDate" name="date" required>
+
+  <label>Description</label>
+  <textarea [(ngModel)]="newBook.description" name="description" required></textarea>
+
+  <button type="submit">Add Book</button>
+
+</form>

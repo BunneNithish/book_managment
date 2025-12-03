@@ -1,0 +1,52 @@
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;   /* spacing between buttons */
+}
+
+.details-btn,
+.delete-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.details-btn {
+  background: #4a90e2;
+  color: white;
+}
+
+.details-btn:hover {
+  background: #3275c7;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
