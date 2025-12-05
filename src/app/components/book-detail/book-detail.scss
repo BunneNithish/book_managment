@@ -1,25 +1,73 @@
-.details-box {
-  border: 1px solid #ddd;
-  padding: 25px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  max-width: 600px;
+/* Center everything on page */
+.detail-page {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
 }
-.details-box h2 {
+
+/* Glassmorphism Card */
+.detail-card {
+  width: 60%;
+  max-width: 700px;
+
+  padding: 30px 35px;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.35);
+
+  color: #fff;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.detail-card h2 {
   margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
 }
+
+.detail-card p {
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+.description {
+  margin-bottom: 25px;
+}
+
+/* Buttons Layout */
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.back-btn {
+  background: rgba(255,255,255,0.3);
+  border: 1px solid #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.back-btn:hover {
+  background: rgba(255,255,255,0.45);
+}
+
 .delete-btn {
-  margin-left: 10px;
-  padding: 10px 15px;
-  background: #e74c3c;
+  background: #8d524b;
+  padding: 10px 16px;
+  border-radius: 6px;
   border: none;
   color: white;
-  border-radius: 5px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 .delete-btn:hover {
-  background: #c0392b;
+  background: #8a4b44;
 }

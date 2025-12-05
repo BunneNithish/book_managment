@@ -1,13 +1,17 @@
-<h2>📚 Book List</h2>
+<h2 class="title">📚 Book List</h2>
 
 <div class="book-grid">
   <div class="book-card" *ngFor="let book of books">
-    <h3>{{ book.title }}</h3>
-    <p><strong>Author:</strong> {{ book.author }}</p>
+
+    <div class="card-content">
+      <h3>{{ book.title }}</h3>
+      <p><strong>Author:</strong> {{ book.author }}</p>
+    </div>
 
     <div class="buttons">
       <button class="details-btn" [routerLink]="['/book', book.id]">View Details</button>
       <button class="delete-btn" (click)="deleteBook(book.id)">Delete</button>
     </div>
+
   </div>
 </div>

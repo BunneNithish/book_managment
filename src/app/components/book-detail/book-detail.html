@@ -1,12 +1,20 @@
-<h2>📘 {{ book?.title }}</h2>
+<div class="detail-page">
 
-<div class="details-box" *ngIf="book">
-  <p><strong>Author:</strong> {{ book.author }}</p>
-  <p><strong>Published:</strong> {{ book.publishedDate | date:'longDate' }}</p>
-  <p><strong>Description:</strong></p>
-  <p>{{ book.description }}</p>
+  <div class="detail-card">
 
-  <button routerLink="/">⬅ Back to List</button>
-  <button class="delete-btn" (click)="deleteBook()">Delete Book</button>
+    <h2>{{ book?.title }}</h2>
+
+    <p><strong>Author:</strong> {{ book?.author }}</p>
+    <p><strong>Published:</strong> {{ book?.publishedDate | date }}</p>
+
+    <p><strong>Description:</strong></p>
+    <p class="description">{{ book?.description }}</p>
+
+    <div class="buttons">
+      <button class="back-btn" routerLink="/">← Back to List</button>
+      <button class="delete-btn" (click)="deleteBook()">Delete Book</button>
+    </div>
+
+  </div>
 
 </div>

@@ -1,14 +1,20 @@
-<nav class="navbar">
-  <h2 class="logo">📚 BookApp</h2>
-  <ul class="nav-links">
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/add-book">Add Book</a></li>
-  </ul>
-</nav>
+<div class="page">
 
-<!-- Main content area -->
-<div class="content">
-  <router-outlet></router-outlet>
+  <header class="navbar">
+    <div class="brand">📚 BookApp</div>
+
+    <nav>
+      <a routerLink="/">List</a>
+      <a routerLink="/add">Add Book</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="footer">
+    © 2024 BookApp. All rights reserved.
+  </footer>
+
 </div>
-
-<footer class="footer">© 2024 BookApp. All rights reserved.</footer>

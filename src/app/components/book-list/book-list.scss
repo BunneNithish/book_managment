@@ -1,52 +1,73 @@
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+.title {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Glassmorphism Card */
 .book-card {
-  border: 1px solid #ddd;
+  height: 260px;
   padding: 20px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  transition: 0.2s;
+  border-radius: 15px;
+
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.4);
+
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: #fff;
+  transition: 0.3s ease;
 }
 
 .book-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
+.card-content h3 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+/* Buttons Styling */
 .buttons {
-  margin-top: 15px;
   display: flex;
-  gap: 12px;   /* spacing between buttons */
-}
-
-.details-btn,
-.delete-btn {
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
+  gap: 12px;
 }
 
 .details-btn {
-  background: #4a90e2;
+  background: linear-gradient(45deg, #70a3df, #7caeeb);
+  padding: 10px 15px;
   color: white;
-}
-
-.details-btn:hover {
-  background: #3275c7;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .delete-btn {
-  background: #e74c3c;
+  background: linear-gradient(45deg, #e07577, #e08378);
+  padding: 10px 15px;
   color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
+.details-btn:hover,
 .delete-btn:hover {
-  background: #c0392b;
+  opacity: 0.85;
 }
